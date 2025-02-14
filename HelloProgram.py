@@ -4,6 +4,9 @@ app = Flask(__name__)
 
 @app.route("/")
 
+def main():
+    return home()
+
 def home():
     print("Hello I am coming to you from the Python Shell")
     return "Hello I am coming to you from the web page"
