@@ -14,7 +14,7 @@ def main():
 def GetInfo():
     name = request.form.get("txtname")
     email = request.form.get("txtemail")
-    return "Hello" + name + ". Thank you for your email" + email
+    print("Hello" + name + ". Thank you for your email" + email)
 
 if __name__=="__main__":
     app.run()
